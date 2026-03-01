@@ -18,6 +18,6 @@ safe-outputs:
 
 Review pull request #${{ github.event.pull_request.number }}.
 
-Follow the guidelines in [architecture-review-guidelines.md](../prompts/architecture-review-guidelines.md).
+Follow the guidelines in [architecture-review-guidelines.md](https://github.com/Azure/azure-sdk-for-js/blob/main/.github/prompts/architecture-review-guidelines.md).
 
 Post your findings as a review comment on the pull request.
