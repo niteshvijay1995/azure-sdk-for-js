@@ -21,7 +21,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  abstract class Credential_2 implements RequestPolicyFactory {
-@@ -72,11 +70,8 @@
+@@ -69,11 +67,8 @@
      destroy(error?: Error): this;
  }
  
@@ -33,7 +33,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(nextPolicy: RequestPolicy, options: RequestPolicyOptionsLike);
      sendRequest(request: WebResourceLike): Promise<CompatResponse>;
  }
-@@ -147,14 +142,10 @@
+@@ -144,14 +139,10 @@
      EXPONENTIAL = 0,
      FIXED = 1
  }
@@ -50,7 +50,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export class StorageSharedKeyCredentialPolicy extends CredentialPolicy {
-@@ -162,9 +153,9 @@
+@@ -159,9 +150,9 @@
      protected signRequest(request: WebResourceLike): WebResourceLike;
  }
  
@@ -61,7 +61,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  // @public
  export const storageSharedKeyCredentialPolicyName = "storageSharedKeyCredentialPolicy";
  
-@@ -197,26 +188,10 @@
+@@ -194,26 +185,10 @@
  export interface StructuredMessageEncodingStreamOptions {
      highWaterMark?: number;
  }

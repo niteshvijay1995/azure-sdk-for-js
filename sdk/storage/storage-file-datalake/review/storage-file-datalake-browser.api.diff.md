@@ -104,10 +104,10 @@ For the complete API surface, see the corresponding -node.api.md file.
      ipRange?: SasIPRange;
 +    // Warning: (ae-forgotten-export) The symbol "SASProtocol" needs to be exported by the entry point index.d.ts
      protocol?: SASProtocol;
-     // (undocumented)
-     requestHeaders?: Record<string, string>;
-     // (undocumented)
-@@ -282,10 +236,8 @@
+     requestHeaders?: RequestHeaders;
+     requestQueryParameters?: RequestQueryParameters;
+     startsOn?: Date;
+@@ -280,10 +234,8 @@
  export { Credential_2 as Credential }
  
  export { CredentialPolicy }
@@ -118,7 +118,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export class DataLakeAclChangeFailedError extends Error {
      constructor(error: RestError | Error, continuationToken?: string);
      continuationToken?: string;
-@@ -318,8 +270,9 @@
+@@ -314,8 +266,9 @@
  }
  
  // @public
@@ -128,7 +128,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(url: string, pipeline: Pipeline, options?: DataLakeClientConfig);
      append(body: HttpRequestBody, offset: number, length: number, options?: FileAppendOptions): Promise<FileAppendResponse>;
      create(resourceType: PathResourceTypeModel, options?: PathCreateOptions): Promise<PathCreateResponse>;
-@@ -430,57 +383,13 @@
+@@ -423,55 +376,13 @@
  export interface DataLakeRequestConditions extends ModifiedAccessConditions, LeaseAccessConditions {
  }
  
@@ -168,10 +168,8 @@ For the complete API surface, see the corresponding -node.api.md file.
 -    permissions?: DataLakeSASPermissions | DirectorySASPermissions | FileSystemSASPermissions;
 -    preauthorizedAgentObjectId?: string;
 -    protocol?: SASProtocol;
--    // (undocumented)
--    requestHeaders?: Record<string, string>;
--    // (undocumented)
--    requestQueryParameters?: Record<string, string>;
+-    requestHeaders?: RequestHeaders;
+-    requestQueryParameters?: RequestQueryParameters;
 -    snapshotTime?: string;
 -    startsOn?: Date;
 -    version?: string;
@@ -187,7 +185,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      generateSasStringToSign(expiresOn?: Date, permissions?: AccountSASPermissions, resourceTypes?: string, options?: ServiceGenerateAccountSasUrlOptions): string;
      getFileSystemClient(fileSystemName: string): DataLakeFileSystemClient;
      getProperties(options?: ServiceGetPropertiesOptions): Promise<DataLakeServiceGetPropertiesResponse>;
-@@ -536,28 +445,13 @@
+@@ -526,28 +437,13 @@
  }
  
  // @public
@@ -217,7 +215,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public (undocumented)
  export interface FileAppendOptions extends CommonOptions {
-@@ -623,8 +517,9 @@
+@@ -612,8 +508,9 @@
  export type FileFlushResponse = WithResponse<PathFlushDataHeaders, PathFlushDataHeaders>;
  
  // @public
@@ -227,7 +225,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public
-@@ -896,8 +791,9 @@
+@@ -882,8 +779,9 @@
  }
  
  // @public
@@ -237,7 +235,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public (undocumented)
-@@ -1044,24 +940,8 @@
+@@ -1030,24 +928,8 @@
  
  // @public
  export type FileSystemRenameResponse = ContainerRenameResponse;
@@ -262,7 +260,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export interface FileSystemSetAccessPolicyHeaders {
      // (undocumented)
      clientRequestId?: string;
-@@ -1132,17 +1012,8 @@
+@@ -1118,17 +1000,8 @@
  // @public (undocumented)
  export type FileUploadResponse = WithResponse<PathFlushDataHeaders, PathFlushDataHeaders>;
  
@@ -280,7 +278,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  export { HttpHeaders }
  
-@@ -1251,10 +1122,8 @@
+@@ -1237,10 +1110,8 @@
  
  // @public
  export function newPipeline(credential?: StorageSharedKeyCredential | AnonymousCredential | TokenCredential, pipelineOptions?: StoragePipelineOptions): Pipeline;
@@ -291,7 +289,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export interface Path {
      // (undocumented)
      contentLength?: number;
-@@ -1925,80 +1794,8 @@
+@@ -1910,78 +1781,8 @@
      // (undocumented)
      write: boolean;
  }
@@ -357,9 +355,7 @@ For the complete API surface, see the corresponding -node.api.md file.
 -    permissions?: string;
 -    preauthorizedAgentObjectId?: string;
 -    protocol?: SASProtocol;
--    // (undocumented)
 -    requestHeaderKeys?: string;
--    // (undocumented)
 -    requestQueryParameterKeys?: string;
 -    resource?: string;
 -    resourceTypes?: string;
@@ -372,7 +368,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export interface ServiceGenerateAccountSasUrlOptions {
-@@ -2114,12 +1911,8 @@
+@@ -2097,12 +1898,8 @@
  export { StorageRetryPolicyFactory }
  
  export { StorageRetryPolicyType }
