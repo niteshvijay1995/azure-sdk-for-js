@@ -104,18 +104,10 @@ For the complete API surface, see the corresponding -node.api.md file.
      ipRange?: SasIPRange;
 +    // Warning: (ae-forgotten-export) The symbol "SASProtocol" needs to be exported by the entry point index.d.ts
      protocol?: SASProtocol;
-<<<<<<< HEAD
-<<<<<<< HEAD
-     startsOn?: Date;
-     version?: string;
- }
-@@ -278,10 +232,8 @@
-=======
      // (undocumented)
      requestHeaders?: Record<string, string>;
      // (undocumented)
-@@ -281,10 +235,8 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -282,10 +236,8 @@
  export { Credential_2 as Credential }
  
  export { CredentialPolicy }
@@ -126,21 +118,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export class DataLakeAclChangeFailedError extends Error {
      constructor(error: RestError | Error, continuationToken?: string);
      continuationToken?: string;
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -303,8 +255,9 @@
-=======
-@@ -302,8 +254,9 @@
-=======
-     // (undocumented)
-     requestHeaders?: Record<string, string>;
-     // (undocumented)
-@@ -314,8 +269,9 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -317,8 +269,9 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -318,8 +270,9 @@
  }
  
  // @public
@@ -150,19 +128,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(url: string, pipeline: Pipeline, options?: DataLakeClientConfig);
      append(body: HttpRequestBody, offset: number, length: number, options?: FileAppendOptions): Promise<FileAppendResponse>;
      create(resourceType: PathResourceTypeModel, options?: PathCreateOptions): Promise<PathCreateResponse>;
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -405,53 +358,13 @@
-=======
-<<<<<<< HEAD
-@@ -404,53 +357,13 @@
-=======
-@@ -426,57 +382,13 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -429,57 +382,13 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -430,57 +383,13 @@
  export interface DataLakeRequestConditions extends ModifiedAccessConditions, LeaseAccessConditions {
  }
  
@@ -221,19 +187,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      generateSasStringToSign(expiresOn?: Date, permissions?: AccountSASPermissions, resourceTypes?: string, options?: ServiceGenerateAccountSasUrlOptions): string;
      getFileSystemClient(fileSystemName: string): DataLakeFileSystemClient;
      getProperties(options?: ServiceGetPropertiesOptions): Promise<DataLakeServiceGetPropertiesResponse>;
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -503,28 +416,13 @@
-=======
-<<<<<<< HEAD
-@@ -502,28 +415,13 @@
-=======
-@@ -532,28 +444,13 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -535,28 +444,13 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -536,28 +445,13 @@
  }
  
  // @public
@@ -263,19 +217,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public (undocumented)
  export interface FileAppendOptions extends CommonOptions {
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -588,8 +486,9 @@
-=======
-<<<<<<< HEAD
-@@ -587,8 +485,9 @@
-=======
-@@ -619,8 +516,9 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -622,8 +516,9 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -623,8 +517,9 @@
  export type FileFlushResponse = WithResponse<PathFlushDataHeaders, PathFlushDataHeaders>;
  
  // @public
@@ -285,19 +227,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -853,8 +752,9 @@
-=======
-<<<<<<< HEAD
-@@ -852,8 +751,9 @@
-=======
-@@ -892,8 +790,9 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -895,8 +790,9 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -896,8 +791,9 @@
  }
  
  // @public
@@ -307,19 +237,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public (undocumented)
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -1001,24 +901,8 @@
-=======
-<<<<<<< HEAD
-@@ -1000,24 +900,8 @@
-=======
-@@ -1040,24 +939,8 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -1043,24 +939,8 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -1044,24 +940,8 @@
  
  // @public
  export type FileSystemRenameResponse = ContainerRenameResponse;
@@ -344,19 +262,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export interface FileSystemSetAccessPolicyHeaders {
      // (undocumented)
      clientRequestId?: string;
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -1089,17 +973,8 @@
-=======
-<<<<<<< HEAD
-@@ -1088,17 +972,8 @@
-=======
-@@ -1128,17 +1011,8 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -1131,17 +1011,8 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -1132,17 +1012,8 @@
  // @public (undocumented)
  export type FileUploadResponse = WithResponse<PathFlushDataHeaders, PathFlushDataHeaders>;
  
@@ -374,9 +280,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  export { HttpHeaders }
  
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -1208,10 +1083,8 @@
+@@ -1251,10 +1122,8 @@
  
  // @public
  export function newPipeline(credential?: StorageSharedKeyCredential | AnonymousCredential | TokenCredential, pipelineOptions?: StoragePipelineOptions): Pipeline;
@@ -387,17 +291,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  export interface Path {
      // (undocumented)
      contentLength?: number;
-@@ -1873,74 +1746,8 @@
-=======
-<<<<<<< HEAD
-@@ -1870,74 +1745,8 @@
-=======
-@@ -1913,74 +1787,8 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -1916,74 +1787,8 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -1925,80 +1794,8 @@
      // (undocumented)
      write: boolean;
  }
@@ -416,7 +310,7 @@ For the complete API surface, see the corresponding -node.api.md file.
 -
 -// @public
 -export class SASQueryParameters {
--    constructor(version: string, signature: string, permissions?: string, services?: string, resourceTypes?: string, protocol?: SASProtocol, startsOn?: Date, expiresOn?: Date, ipRange?: SasIPRange, identifier?: string, resource?: string, cacheControl?: string, contentDisposition?: string, contentEncoding?: string, contentLanguage?: string, contentType?: string, userDelegationKey?: UserDelegationKey, directoryDepth?: number, preauthorizedAgentObjectId?: string, agentObjectId?: string, correlationId?: string, encryptionScope?: string, delegatedUserObjectId?: string);
+-    constructor(version: string, signature: string, permissions?: string, services?: string, resourceTypes?: string, protocol?: SASProtocol, startsOn?: Date, expiresOn?: Date, ipRange?: SasIPRange, identifier?: string, resource?: string, cacheControl?: string, contentDisposition?: string, contentEncoding?: string, contentLanguage?: string, contentType?: string, userDelegationKey?: UserDelegationKey, directoryDepth?: number, preauthorizedAgentObjectId?: string, agentObjectId?: string, correlationId?: string, encryptionScope?: string, delegatedUserObjectId?: string, requestHeaderKeys?: string, requestQueryParameterKeys?: string);
 -    constructor(version: string, signature: string, options?: SASQueryParametersOptions);
 -    readonly agentObjectId?: string;
 -    readonly cacheControl?: string;
@@ -434,6 +328,8 @@ For the complete API surface, see the corresponding -node.api.md file.
 -    readonly permissions?: string;
 -    readonly preauthorizedAgentObjectId?: string;
 -    readonly protocol?: SASProtocol;
+-    readonly requestHeaderKeys?: string;
+-    readonly requestQueryParameterKeys?: string;
 -    readonly resource?: string;
 -    readonly resourceTypes?: string;
 -    readonly services?: string;
@@ -461,6 +357,10 @@ For the complete API surface, see the corresponding -node.api.md file.
 -    permissions?: string;
 -    preauthorizedAgentObjectId?: string;
 -    protocol?: SASProtocol;
+-    // (undocumented)
+-    requestHeaderKeys?: string;
+-    // (undocumented)
+-    requestQueryParameterKeys?: string;
 -    resource?: string;
 -    resourceTypes?: string;
 -    services?: string;
@@ -472,19 +372,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export interface ServiceGenerateAccountSasUrlOptions {
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -2045,12 +1852,8 @@
-=======
-<<<<<<< HEAD
-@@ -2042,12 +1851,8 @@
-=======
-@@ -2096,12 +1904,8 @@
->>>>>>> 367b8bcce1 (STG101)
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -2099,12 +1904,8 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -2114,12 +1911,8 @@
  export { StorageRetryPolicyFactory }
  
  export { StorageRetryPolicyType }

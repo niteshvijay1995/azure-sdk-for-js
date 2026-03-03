@@ -20,17 +20,10 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public
-<<<<<<< HEAD
- export abstract class Credential implements RequestPolicyFactory {
-@@ -67,11 +65,8 @@
+ abstract class Credential_2 implements RequestPolicyFactory {
+@@ -72,11 +70,8 @@
      destroy(error?: Error): this;
  }
-=======
- abstract class Credential_2 implements RequestPolicyFactory {
-@@ -67,11 +65,8 @@
- // @public
- export function NewRetryPolicyFactory(retryOptions?: StorageRetryOptions): RequestPolicyFactory;
->>>>>>> fc0eb7e65c (STG101)
  
  // @public
 -export type OutgoingHandler = (body: () => NodeJS.ReadableStream, length: number, offset?: number) => Promise<any>;
@@ -40,11 +33,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(nextPolicy: RequestPolicy, options: RequestPolicyOptionsLike);
      sendRequest(request: WebResourceLike): Promise<CompatResponse>;
  }
-<<<<<<< HEAD
-@@ -134,14 +129,10 @@
-=======
-@@ -149,14 +144,10 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -154,14 +149,10 @@
      EXPONENTIAL = 0,
      FIXED = 1
  }
@@ -61,11 +50,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export class StorageSharedKeyCredentialPolicy extends CredentialPolicy {
-<<<<<<< HEAD
-@@ -149,9 +140,9 @@
-=======
-@@ -164,9 +155,9 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -169,9 +160,9 @@
      protected signRequest(request: WebResourceLike): WebResourceLike;
  }
  
@@ -76,15 +61,9 @@ For the complete API surface, see the corresponding -node.api.md file.
  // @public
  export const storageSharedKeyCredentialPolicyName = "storageSharedKeyCredentialPolicy";
  
-<<<<<<< HEAD
-@@ -162,25 +153,10 @@
-     // (undocumented)
-     accountName: string;
-=======
-@@ -200,26 +191,10 @@
+@@ -205,26 +196,10 @@
      doInjectErrorOnce?: boolean;
      highWaterMark?: number;
->>>>>>> fc0eb7e65c (STG101)
  }
  
 -// @public

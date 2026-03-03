@@ -20,12 +20,8 @@ For the complete API surface, see the corresponding -node.api.md file.
  }
  
  // @public
-<<<<<<< HEAD
- export abstract class Credential implements RequestPolicyFactory {
-@@ -62,16 +60,8 @@
-=======
  abstract class Credential_2 implements RequestPolicyFactory {
-@@ -60,18 +58,12 @@
+@@ -60,23 +58,12 @@
  
  // @public (undocumented)
  export function getCachedDefaultHttpClient(): HttpClient;
@@ -33,7 +29,6 @@ For the complete API surface, see the corresponding -node.api.md file.
 -// @public (undocumented)
 -export function isNodeReadableStream(source: any): boolean;
 -
->>>>>>> 6d421431c9 (STG101)
  // @public
  export function NewRetryPolicyFactory(retryOptions?: StorageRetryOptions): RequestPolicyFactory;
  
@@ -50,39 +45,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(nextPolicy: RequestPolicy, options: RequestPolicyOptionsLike);
      sendRequest(request: WebResourceLike): Promise<CompatResponse>;
  }
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -134,26 +124,16 @@
-=======
-@@ -92,23 +83,8 @@
- 
- // @public
- export const storageCorrectContentLengthPolicyName = "StorageCorrectContentLengthPolicy";
- 
--// @public (undocumented)
--export class StorageCRC64Calculator {
--    constructor();
--    // (undocumented)
--    Append(body: Uint8Array, length: number): void;
--    // (undocumented)
--    Final(body: Uint8Array, length: number): Uint8Array;
--    // (undocumented)
--    static init(): Promise<void>;
--    // (undocumented)
--    static isInitializing: boolean;
--    // (undocumented)
--    static nativeInstance: any;
--}
--
- // @public
- export function storageRequestFailureDetailsParserPolicy(): PipelinePolicy;
- 
- // @public
-@@ -149,26 +125,16 @@
->>>>>>> 6d421431c9 (STG101)
-=======
-@@ -149,26 +141,16 @@
->>>>>>> fc0eb7e65c (STG101)
+@@ -154,26 +141,16 @@
      EXPONENTIAL = 0,
      FIXED = 1
  }
@@ -112,20 +75,9 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export interface StorageSharedKeyCredentialPolicyOptions {
-<<<<<<< HEAD
-<<<<<<< HEAD
-@@ -162,25 +142,10 @@
-     // (undocumented)
-=======
-@@ -178,48 +144,9 @@
->>>>>>> 6d421431c9 (STG101)
-     accountName: string;
- }
-=======
-@@ -181,45 +163,18 @@
+@@ -186,45 +163,18 @@
  // @public (undocumented)
  export function structuredMessageDecodingBrowser(source: Blob | ReadableStream<Uint8Array>): Promise<Blob>;
->>>>>>> fc0eb7e65c (STG101)
  
  // @public (undocumented)
 -export function structuredMessageDecodingStream(source: NodeJS.ReadableStream, options: StructuredMessageDecodingStreamOptions): NodeJS.ReadableStream;
