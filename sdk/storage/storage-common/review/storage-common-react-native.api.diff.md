@@ -33,7 +33,7 @@ For the complete API surface, see the corresponding -node.api.md file.
      constructor(nextPolicy: RequestPolicy, options: RequestPolicyOptionsLike);
      sendRequest(request: WebResourceLike): Promise<CompatResponse>;
  }
-@@ -154,14 +149,10 @@
+@@ -147,14 +142,10 @@
      EXPONENTIAL = 0,
      FIXED = 1
  }
@@ -50,7 +50,7 @@ For the complete API surface, see the corresponding -node.api.md file.
  
  // @public
  export class StorageSharedKeyCredentialPolicy extends CredentialPolicy {
-@@ -169,9 +160,9 @@
+@@ -162,9 +153,9 @@
      protected signRequest(request: WebResourceLike): WebResourceLike;
  }
  
@@ -61,8 +61,8 @@ For the complete API surface, see the corresponding -node.api.md file.
  // @public
  export const storageSharedKeyCredentialPolicyName = "storageSharedKeyCredentialPolicy";
  
-@@ -205,26 +196,10 @@
-     doInjectErrorOnce?: boolean;
+@@ -197,26 +188,10 @@
+ export interface StructuredMessageEncodingStreamOptions {
      highWaterMark?: number;
  }
  
